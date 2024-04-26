@@ -8,6 +8,8 @@ public class Player : Person {
 
     void Update() {
         HandleInput();
+        Name = "Bob";
+        print(Name);
     }
 
     // ABSTRACTION

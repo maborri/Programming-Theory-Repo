@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class Person : MonoBehaviour {
     private const int maxNameLength = 4;
+    
     // ENCAPSULATION
     public string Name { 
         get { return m_name; } 
         set {
             if (value.Length > maxNameLength) {
                 Debug.LogError("Name must be shorter");
+            } else {
+                m_name = value;
             }
         } 
     } 
